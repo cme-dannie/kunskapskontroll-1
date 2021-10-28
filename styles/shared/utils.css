@@ -11,6 +11,7 @@
   color: white;
   font-weight: 600;
   text-align: center;
+  transition: all 100ms ease-in;
 }
 
 .button:hover {
@@ -36,4 +37,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.perspective {
+  perspective: 1000px;
 }

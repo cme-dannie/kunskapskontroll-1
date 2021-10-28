@@ -18,10 +18,12 @@ header .avatar-container img {
   margin-right: 1rem;
   width: 4rem;
   height: 4rem;
+  transition: all 500ms ease-in-out;
 }
 
 header .avatar-container .my-portfolio {
   display: none;
+  transition: all 200ms ease-in-out;
 }
 
 header .avatar-container {
@@ -43,6 +45,14 @@ header ul a {
     display: inline;
     letter-spacing: 0.3em;
     color: white;
+  }
+
+  header .avatar-container:hover img {
+    transform: rotateX(360deg);
+  }
+
+  header .avatar-container:hover .my-portfolio {
+    transform: rotateZ(-5deg);
   }
 
   header ul a {

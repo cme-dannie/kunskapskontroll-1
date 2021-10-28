@@ -41,6 +41,11 @@
   background-blend-mode: multiply;
   color: white;
   padding: 1em;
+  transition: all 200ms ease-in-out;
+}
+
+.my-skills .card:hover {
+  transform: scale(1.1);
 }
 
 /* Larger screens */

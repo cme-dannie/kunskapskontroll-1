@@ -11,23 +11,22 @@ main .container {
 
 .experience {
   display: flex;
-  /* By default, every experience is in column-reverse order */
-  flex-direction: column-reverse;
+  flex-direction: column;
   margin-top: 2em;
   gap: 2em;
 }
 
-/* Then we override it by saying every other is regular column. 
-This is necessary since the image and text comes in different 
-orders for every item. */
-.experience:nth-child(2n) {
-  flex-direction: column;
-}
-
 /* Larger screens */
 @media (min-width: 600px) {
+  /* By default, every experience is in row order */
   .experience {
-    flex-direction: row !important;
+    flex-direction: row;
+  }
+
+  /* Then we override it by saying every other is row-reverse. 
+  This is necessary to get the look we want */
+  .experience:nth-child(2n) {
+    flex-direction: row-reverse;
   }
 
   .experience > * {
