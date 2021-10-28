@@ -1,0 +1,32 @@
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: var(--size-default);
+}
+
+h1 {
+  font-size: var(--size-1);
+}
+
+h2 {
+  font-size: var(--size-2);
+}
+
+h3 {
+  font-size: var(--size-3);
+}
+
+p {
+  line-height: 1.5;
+}
+
+small {
+  font-size: var(--size-small);
+}
+
+form {
+  font-size: var(--size-default);
+}

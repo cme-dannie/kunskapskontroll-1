@@ -1,0 +1,45 @@
+.hero {
+  background: var(--clr-primary);
+  padding: 5rem 0;
+}
+
+.hero .inner-container {
+  max-width: 50ch;
+}
+
+.hero h2 {
+  color: white;
+  margin-top: 0.5em;
+}
+
+.hero p {
+  margin-top: 2em;
+  padding: 2em 0;
+  border-top: 2px solid black;
+}
+
+.my-experiences {
+  padding: 5rem 0;
+}
+
+.my-experiences .card-container {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1em;
+}
+
+.my-experiences .card {
+  background-color: var(--clr-primary);
+  background-blend-mode: darken;
+  color: white;
+  padding: 1em;
+}
+
+/* Larger screens */
+@media (min-width: 500px) {
+  .hero {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+}

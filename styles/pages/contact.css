@@ -1,0 +1,30 @@
+main .container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 50ch;
+}
+
+form > * {
+  margin-top: 1em;
+}
+
+textarea,
+input {
+  padding: 0.75em;
+}
+
+form *:focus {
+  outline-color: var(--clr-primary);
+}
+
+/* Larger screens */
+@media (min-width: 500px) {
+  .button {
+    align-self: start;
+  }
+}
