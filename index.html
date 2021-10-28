@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dannie Håkansson - My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="typography.css" />
+    <style>
+      header {
+        background: #c8371d;
+      }
+
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid black;
+      }
+
+      .main-list {
+        display: flex;
+      }
+
+      .main-list a {
+        padding: 1em 0.75em;
+      }
+
+      .main-list a:hover {
+        color: white;
+      }
+
+      .hero {
+        background: #da422a;
+        padding: 5rem 0;
+      }
+
+      .hero .inner-container {
+        max-width: 50ch;
+      }
+
+      .hero h2 {
+        color: white;
+        margin-top: 0.5em;
+      }
+
+      .hero p {
+        margin-top: 2em;
+        padding: 2em 0;
+        border-top: 2px solid black;
+      }
+
+      .my-experiences {
+        padding: 5rem 0;
+      }
+
+      .my-experiences .card-container {
+        margin-top: 1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1em;
+      }
+
+      .my-experiences .card {
+        background: #da422a;
+        color: white;
+        padding: 1em;
+      }
+
+      .my-experiences .card p {
+        color: black;
+      }
+
+      footer {
+        background: #da422a;
+        padding: 2em 0;
+      }
+
+      @media (min-width: 500px) {
+        .main-list a {
+          padding: 1.5em 1em;
+        }
+
+        .hero {
+          padding-top: 10rem;
+          padding-bottom: 10rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <img
+          class="avatar"
+          src="assets/profile-picture.jpeg"
+          alt="Profile picture"
+          width="40"
+          height="40"
+        />
+        <nav>
+          <ul class="main-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="inner-container">
+            <h1>Dannie Håkansson</h1>
+            <h2>Fullstack Developer</h2>
+            <p>
+              I am a passionate developer and am confident that I will be able
+              to function well in any team.
+            </p>
+            <a href="experience.html" class="button">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="my-experiences">
+            <h2>My skills</h2>
+            <div class="card-container">
+              <div class="card">
+                <h3>Frontend (HTML/CSS/JS)</h3>
+                <p>I excel in frontend development. HTML/CSS/JS is my forte.</p>
+              </div>
+              <div class="card shadow">
+                <h3>Team dynamics</h3>
+                <p>
+                  I enjoy greatly working with others, and believe I contribute
+                  well to projects at large.
+                </p>
+              </div>
+              <div class="card shadow">
+                <h3>Product development</h3>
+                <p>I've been part of developing a number of products.</p>
+              </div>
+              <div class="card shadow">
+                <h3>Agile planning</h3>
+                <p>
+                  Shaping a great product workflow and methodology is something
+                  I'm very accustomed to.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Experience</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
