@@ -19,13 +19,22 @@ ul {
 }
 
 /* Form elements reset */
-textarea,
-input {
+form textarea,
+form input {
   border: 0;
+}
+
+form textarea {
+  resize: none;
+}
+
+form * {
   font-family: inherit;
   font-size: inherit;
 }
 
-textarea {
-  resize: none;
+/* Non-keyboard navigation styling. Should not break accessibility. */
+*:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
 }

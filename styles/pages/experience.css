@@ -1,0 +1,31 @@
+main .container {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.experiences {
+  display: flex;
+  flex-direction: column;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.experience:nth-child(2n) {
+  flex-direction: column;
+}
+
+/* Larger screens */
+@media (min-width: 600px) {
+  .experience {
+    flex-direction: row !important;
+  }
+
+  .experience > * {
+    flex: 1 1 50%;
+  }
+}

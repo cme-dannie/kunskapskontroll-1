@@ -10,6 +10,11 @@ body {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   display: inline-block;
   text-decoration: none;
@@ -22,8 +27,8 @@ a:hover {
 }
 
 /* Form elements */
-textarea,
-input {
+form textarea,
+form input {
   border: 1px solid var(--clr-primary);
 }
 

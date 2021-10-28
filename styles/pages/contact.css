@@ -6,15 +6,16 @@ main .container {
 form {
   display: flex;
   flex-direction: column;
-  max-width: 50ch;
+  max-width: 60ch;
 }
 
-form > * {
+/* All direct children of form that are not the first-child */
+form > *:not(:first-child) {
   margin-top: 1em;
 }
 
-textarea,
-input {
+form textarea,
+form input {
   padding: 0.75em;
 }
 
