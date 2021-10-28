@@ -1,0 +1,9 @@
+form textarea,
+form input {
+  border: 1px solid var(--clr-primary);
+}
+
+*:focus {
+  outline: 3px dashed black;
+  outline-offset: 5px;
+}

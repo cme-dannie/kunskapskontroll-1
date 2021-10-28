@@ -1,0 +1,27 @@
+p {
+  margin-top: 1em;
+}
+
+body {
+  color: var(--clr-text);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  text-shadow: var(--text-shadow);
+}

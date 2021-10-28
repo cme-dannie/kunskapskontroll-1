@@ -1,0 +1,51 @@
+header {
+  background: var(--clr-primary-dark);
+}
+
+header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+header .avatar-container {
+  display: flex;
+  align-items: center;
+}
+
+header .avatar-container img {
+  margin-right: 1rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+header .avatar-container .my-portfolio {
+  display: none;
+}
+
+header .avatar-container {
+  font-style: italic;
+}
+
+header ul {
+  display: flex;
+  margin-right: -2rem;
+}
+
+header ul a {
+  padding: 1em 0.75em;
+}
+
+/* Larger screens */
+@media (min-width: 500px) {
+  header .avatar-container .my-portfolio {
+    display: inline;
+    letter-spacing: 0.3em;
+    color: white;
+  }
+
+  header ul a {
+    padding: 1.5em 1em;
+  }
+}

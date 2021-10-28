@@ -1,0 +1,15 @@
+footer {
+  background: #da422a;
+  padding: 2em 0;
+}
+
+footer ul a {
+  padding: 0.25em 0;
+}
+
+footer small {
+  display: block;
+  border-top: 2px solid black;
+  margin-top: 1em;
+  padding-top: 1em;
+}

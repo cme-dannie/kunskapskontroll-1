@@ -1,0 +1,39 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.button {
+  border: 0;
+  padding: 0.75em 1.5em;
+  background: hsl(9, 75%, 45%);
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+
+.button:hover {
+  background: hsl(9, 75%, 42%);
+}
+
+.avatar {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100%;
+  border: 1px solid white;
+}
+
+.shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+
+.bg-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
