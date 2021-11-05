@@ -1,0 +1,54 @@
+/* Global */
+body {
+  color: var(--clr-text);
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+/* Header */
+header {
+  background: var(--clr-primary-dark);
+}
+
+/* Footer */
+footer {
+  background: var(--clr-primary);
+}
+
+/* Utils */
+.button {
+  background: hsl(9, 75%, 45%);
+  color: white;
+}
+
+/* Index page */
+.hero {
+  background: var(--clr-primary);
+}
+
+.my-skills .card {
+  color: white;
+  background-color: var(--clr-primary);
+}
+
+.hero h2 {
+  color: white;
+}
+
+.button:hover {
+  background: hsl(9, 75%, 42%);
+}
+
+/* Larger screens */
+@media (min-width: 500px) {
+  /* Header */
+  header .avatar-container .my-portfolio {
+    color: white;
+  }
+}

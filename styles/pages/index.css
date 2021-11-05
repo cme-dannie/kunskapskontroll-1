@@ -1,6 +1,5 @@
 /* Hero unit */
 .hero {
-  background: var(--clr-primary);
   padding: 5rem 0;
 }
 
@@ -9,7 +8,6 @@
 }
 
 .hero h2 {
-  color: white;
   margin-top: 0.5em;
 }
 
@@ -37,9 +35,7 @@
 
 .my-skills .card {
   background-image: var(--image-url);
-  background-color: var(--clr-primary);
   background-blend-mode: multiply;
-  color: white;
   padding: 1em;
   transition: all 200ms ease-in-out;
 }

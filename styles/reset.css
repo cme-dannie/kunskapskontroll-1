@@ -28,11 +28,6 @@ form textarea {
   resize: none;
 }
 
-form * {
-  font-family: inherit;
-  font-size: inherit;
-}
-
 /* Non-keyboard navigation styling. Should not break accessibility. */
 *:focus:not(:focus-visible) {
   outline: 0;

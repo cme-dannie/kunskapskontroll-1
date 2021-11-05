@@ -2,31 +2,3 @@ main .container {
   padding-top: 2em;
   padding-bottom: 2em;
 }
-
-/* Form area */
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 60ch;
-}
-
-/* All direct children of form that are not the first-child */
-form > *:not(:first-child) {
-  margin-top: 1em;
-}
-
-form textarea,
-form input {
-  padding: 0.75em;
-}
-
-form *:focus {
-  outline-color: var(--clr-primary);
-}
-
-/* Larger screens */
-@media (min-width: 500px) {
-  form .button {
-    align-self: start;
-  }
-}

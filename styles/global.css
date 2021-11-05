@@ -1,9 +1,13 @@
+*:focus {
+  outline: 3px dashed black;
+  outline-offset: 5px;
+}
+
 p {
   margin-top: 1em;
 }
 
 body {
-  color: var(--clr-text);
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -18,11 +22,9 @@ img {
 a {
   display: inline-block;
   text-decoration: none;
-  color: black;
   transition: all 100ms ease-in;
 }
 
 a:hover {
-  color: white;
   text-shadow: var(--text-shadow);
 }

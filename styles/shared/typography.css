@@ -2,6 +2,11 @@
   font-size: 62.5%;
 }
 
+form * {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 body {
   font-family: "Alumni Sans", sans-serif;
   font-size: var(--size-default);

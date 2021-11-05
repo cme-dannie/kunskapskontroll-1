@@ -1,9 +1,26 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 60ch;
+}
+
+form > *:not(:first-child) {
+  margin-top: 1em;
+}
+
 form textarea,
 form input {
+  padding: 0.75em;
   border: 1px solid var(--clr-primary);
 }
 
-*:focus {
-  outline: 3px dashed black;
-  outline-offset: 5px;
+form *:focus {
+  outline-color: var(--clr-primary);
+}
+
+/* Larger screens */
+@media (min-width: 500px) {
+  form .button {
+    align-self: start;
+  }
 }
